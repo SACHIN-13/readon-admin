@@ -552,8 +552,11 @@
                 "slug": {
                   "type": "uid"
                 },
-                "blog": {
-                  "type": "string"
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"

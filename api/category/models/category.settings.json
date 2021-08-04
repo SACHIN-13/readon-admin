@@ -18,9 +18,9 @@
       "targetField": "name",
       "required": true
     },
-    "blog": {
+    "blogs": {
       "via": "categories",
-      "model": "blog"
+      "collection": "blog"
     }
   }
 }

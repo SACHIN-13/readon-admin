@@ -532,61 +532,64 @@
           "slug": {
             "type": "uid"
           },
-          "blog": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "title": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "content": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
+          "blogs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "media": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reading_time": {
+                  "type": "integer"
+                },
+                "thumbnail": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "tags": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "media": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "reading_time": {
-                "type": "integer"
-              },
-              "thumbnail": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           }
@@ -604,8 +607,11 @@
           "slug": {
             "type": "uid"
           },
-          "blog": {
-            "type": "string"
+          "blogs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

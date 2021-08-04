@@ -26,7 +26,8 @@
     },
     "categories": {
       "collection": "category",
-      "via": "blog"
+      "via": "blogs",
+      "dominant": true
     },
     "tags": {
       "collection": "tags"
