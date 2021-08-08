@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/blogs": {
+    "/comments": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Blog"
+                    "$ref": "#/components/schemas/Comment"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Blog"
+                  "$ref": "#/components/schemas/Comment"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBlog"
+                "$ref": "#/components/schemas/NewComment"
               }
             }
           }
         }
       }
     },
-    "/blogs/count": {
+    "/comments/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "parameters": []
       }
     },
-    "/blogs/{id}": {
+    "/comments/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Blog"
+                  "$ref": "#/components/schemas/Comment"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Blog"
+                  "$ref": "#/components/schemas/Comment"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBlog"
+                "$ref": "#/components/schemas/NewComment"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Blog"
+          "Comment"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Blog": {
+      "Comment": {
         "required": [
           "id"
         ],
@@ -522,223 +522,10 @@
           "id": {
             "type": "string"
           },
-          "slug": {
-            "type": "uid"
-          },
-          "title": {
+          "text": {
             "type": "string"
           },
-          "caption": {
-            "type": "string"
-          },
-          "content": {
-            "type": "string"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "blogs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "media": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "reading_time": {
-            "type": "integer"
-          },
-          "thumbnail": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "comments": {
+          "replies": {
             "type": "array",
             "items": {
               "required": [
@@ -751,12 +538,6 @@
                 "text": {
                   "type": "string"
                 },
-                "replies": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "user": {
                   "type": "string"
                 },
@@ -772,63 +553,61 @@
               }
             }
           },
-          "reactions": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "like",
-                    "dislike",
-                    "excited"
-                  ]
-                },
-                "active": {
-                  "type": "boolean"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "poll": {
+          "user": {
             "required": [
-              "id"
+              "id",
+              "username",
+              "email"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "question": {
+              "username": {
                 "type": "string"
               },
-              "answers": {
-                "type": "component"
+              "email": {
+                "type": "string"
               },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "provider": {
+                "type": "string"
               },
-              "published_at": {
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              },
+              "Age": {
+                "type": "integer"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string",
+                "enum": [
+                  "female",
+                  "male",
+                  "na"
+                ]
+              },
+              "name": {
                 "type": "string"
               },
               "created_by": {
@@ -845,48 +624,18 @@
           }
         }
       },
-      "NewBlog": {
+      "NewComment": {
         "properties": {
-          "slug": {
-            "type": "uid"
-          },
-          "title": {
+          "text": {
             "type": "string"
           },
-          "caption": {
-            "type": "string"
-          },
-          "content": {
-            "type": "string"
-          },
-          "categories": {
+          "replies": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "reading_time": {
-            "type": "integer"
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "reactions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "poll": {
+          "user": {
             "type": "string"
           },
           "published_at": {
@@ -905,7 +654,7 @@
   },
   "tags": [
     {
-      "name": "Blog"
+      "name": "Comment"
     }
   ]
 }

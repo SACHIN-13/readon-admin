@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_activities",
+  "info": {
+    "name": "User Activity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "preferred_categories": {
+      "collection": "category"
+    },
+    "bookmarks": {
+      "type": "json"
+    }
+  }
+}

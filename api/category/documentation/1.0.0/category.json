@@ -581,6 +581,21 @@
                     "type": "string"
                   }
                 },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "poll": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

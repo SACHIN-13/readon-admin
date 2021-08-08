@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_poll_answers",
+  "info": {
+    "name": "Poll-Answer",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "handpicked_articles",
+  "info": {
+    "name": "Handpicked Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "poll": {
+      "model": "poll"
+    },
+    "comments": {
+      "collection": "comment"
+    },
+    "reactions": {
+      "collection": "reaction"
+    }
+  }
+}

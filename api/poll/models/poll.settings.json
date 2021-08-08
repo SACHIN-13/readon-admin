@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "polls",
+  "info": {
+    "name": "Poll",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.poll-answer"
+    },
+    "comments": {
+      "collection": "comment"
+    }
+  }
+}

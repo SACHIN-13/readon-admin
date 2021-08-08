@@ -58,6 +58,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "comments": {
+      "collection": "comment"
+    },
+    "reactions": {
+      "collection": "reaction"
+    },
+    "poll": {
+      "model": "poll"
     }
   }
 }

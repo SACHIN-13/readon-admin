@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_sliders",
+  "info": {
+    "name": "Blog Sliders"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sliders": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "comments": {
+      "collection": "comment"
+    },
+    "reactions": {
+      "collection": "reaction"
+    },
+    "poll": {
+      "model": "poll"
+    }
+  }
+}

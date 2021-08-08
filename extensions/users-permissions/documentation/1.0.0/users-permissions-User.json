@@ -1250,6 +1250,26 @@
                 "type": "string"
               }
             }
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "Age": {
+            "type": "integer"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "female",
+              "male",
+              "na"
+            ]
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
@@ -1290,6 +1310,26 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "Age": {
+            "type": "integer"
+          },
+          "phone": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "female",
+              "male",
+              "na"
+            ]
+          },
+          "name": {
             "type": "string"
           },
           "created_by": {
