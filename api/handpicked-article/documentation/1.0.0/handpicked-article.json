@@ -712,6 +712,9 @@
           "content": {
             "type": "string"
           },
+          "title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -739,6 +742,9 @@
             "type": "string"
           },
           "content": {
+            "type": "string"
+          },
+          "title": {
             "type": "string"
           },
           "published_at": {
