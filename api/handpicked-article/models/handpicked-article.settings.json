@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "handpicked_articles",
   "info": {
-    "name": "Handpicked Article"
+    "name": "Handpicked Article",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "content": {
-      "type": "text"
-    },
-    "title": {
-      "type": "string"
-    },
     "images": {
       "collection": "file",
       "via": "related",
@@ -37,6 +32,12 @@
     },
     "reactions": {
       "collection": "reaction"
+    },
+    "source": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
