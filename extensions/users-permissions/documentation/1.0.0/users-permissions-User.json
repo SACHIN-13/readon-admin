@@ -1254,9 +1254,6 @@
           "user_id": {
             "type": "string"
           },
-          "Age": {
-            "type": "integer"
-          },
           "phone": {
             "type": "integer"
           },
@@ -1270,6 +1267,28 @@
           },
           "name": {
             "type": "string"
+          },
+          "dob": {
+            "type": "string",
+            "format": "date"
+          },
+          "area_of_education": {
+            "type": "string"
+          },
+          "occupation": {
+            "type": "string"
+          },
+          "linkedin_profile": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "coins": {
+            "type": "integer"
           }
         }
       },
@@ -1315,9 +1334,6 @@
           "user_id": {
             "type": "string"
           },
-          "Age": {
-            "type": "integer"
-          },
           "phone": {
             "type": "integer"
           },
@@ -1331,6 +1347,28 @@
           },
           "name": {
             "type": "string"
+          },
+          "dob": {
+            "type": "string",
+            "format": "date"
+          },
+          "area_of_education": {
+            "type": "string"
+          },
+          "occupation": {
+            "type": "string"
+          },
+          "linkedin_profile": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "coins": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

@@ -62,9 +62,6 @@
     "user_id": {
       "type": "string"
     },
-    "Age": {
-      "type": "integer"
-    },
     "phone": {
       "type": "biginteger"
     },
@@ -78,6 +75,27 @@
     },
     "name": {
       "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "area_of_education": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "linkedin_profile": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "location": {
+      "type": "string"
+    },
+    "coins": {
+      "type": "integer"
     }
   }
 }

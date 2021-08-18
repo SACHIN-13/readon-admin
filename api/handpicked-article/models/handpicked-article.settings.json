@@ -41,6 +41,21 @@
     },
     "title": {
       "type": "string"
+    },
+    "so": {
+      "type": "richtext"
+    },
+    "bg_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
