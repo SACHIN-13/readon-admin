@@ -41,6 +41,9 @@
     "blog": {
       "model": "blog",
       "via": "blog_slider"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
