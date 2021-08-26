@@ -21,6 +21,10 @@
     "blogs": {
       "via": "categories",
       "collection": "blog"
+    },
+    "blog_sliders": {
+      "via": "categories",
+      "collection": "blog-sliders"
     }
   }
 }

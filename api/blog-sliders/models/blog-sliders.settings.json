@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blog_sliders",
   "info": {
-    "name": "Blog Sliders"
+    "name": "Blog Sliders",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,15 @@
     },
     "poll": {
       "model": "poll"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "blog_sliders",
+      "dominant": true
+    },
+    "blog": {
+      "model": "blog",
+      "via": "blog_slider"
     }
   }
 }

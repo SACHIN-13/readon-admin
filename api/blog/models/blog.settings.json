@@ -67,6 +67,10 @@
     },
     "poll": {
       "model": "poll"
+    },
+    "blog_slider": {
+      "via": "blog",
+      "model": "blog-sliders"
     }
   }
 }
