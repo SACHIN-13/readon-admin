@@ -34,8 +34,8 @@
       "model": "poll"
     },
     "categories": {
-      "collection": "category",
       "via": "blog_sliders",
+      "collection": "category",
       "dominant": true
     },
     "blog": {
