@@ -1260,9 +1260,12 @@
           "gender": {
             "type": "string",
             "enum": [
-              "female",
-              "male",
-              "na"
+              "Male",
+              "Female",
+              "Non_binary",
+              "Transgender",
+              "Prefer_not_to_say",
+              "Other"
             ]
           },
           "name": {
@@ -1340,9 +1343,12 @@
           "gender": {
             "type": "string",
             "enum": [
-              "female",
-              "male",
-              "na"
+              "Male",
+              "Female",
+              "Non_binary",
+              "Transgender",
+              "Prefer_not_to_say",
+              "Other"
             ]
           },
           "name": {

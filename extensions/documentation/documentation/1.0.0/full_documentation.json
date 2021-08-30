@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/26/2021 6:39:01 PM"
+    "x-generation-date": "08/30/2021 3:37:48 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9182,9 +9182,12 @@
               "gender": {
                 "type": "string",
                 "enum": [
-                  "female",
-                  "male",
-                  "na"
+                  "Male",
+                  "Female",
+                  "Non_binary",
+                  "Transgender",
+                  "Prefer_not_to_say",
+                  "Other"
                 ]
               },
               "name": {
@@ -10229,9 +10232,12 @@
               "gender": {
                 "type": "string",
                 "enum": [
-                  "female",
-                  "male",
-                  "na"
+                  "Male",
+                  "Female",
+                  "Non_binary",
+                  "Transgender",
+                  "Prefer_not_to_say",
+                  "Other"
                 ]
               },
               "name": {
@@ -10357,9 +10363,12 @@
               "gender": {
                 "type": "string",
                 "enum": [
-                  "female",
-                  "male",
-                  "na"
+                  "Male",
+                  "Female",
+                  "Non_binary",
+                  "Transgender",
+                  "Prefer_not_to_say",
+                  "Other"
                 ]
               },
               "name": {
@@ -10703,9 +10712,12 @@
                 "gender": {
                   "type": "string",
                   "enum": [
-                    "female",
-                    "male",
-                    "na"
+                    "Male",
+                    "Female",
+                    "Non_binary",
+                    "Transgender",
+                    "Prefer_not_to_say",
+                    "Other"
                   ]
                 },
                 "name": {
@@ -10854,9 +10866,12 @@
           "gender": {
             "type": "string",
             "enum": [
-              "female",
-              "male",
-              "na"
+              "Male",
+              "Female",
+              "Non_binary",
+              "Transgender",
+              "Prefer_not_to_say",
+              "Other"
             ]
           },
           "name": {
@@ -10934,9 +10949,12 @@
           "gender": {
             "type": "string",
             "enum": [
-              "female",
-              "male",
-              "na"
+              "Male",
+              "Female",
+              "Non_binary",
+              "Transgender",
+              "Prefer_not_to_say",
+              "Other"
             ]
           },
           "name": {
