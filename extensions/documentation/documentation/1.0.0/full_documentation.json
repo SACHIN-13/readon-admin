@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/30/2021 5:53:11 PM"
+    "x-generation-date": "08/30/2021 9:23:32 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10456,16 +10456,11 @@
           "user": {
             "required": [
               "id",
+              "username",
               "email"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "firstname": {
-                "type": "string"
-              },
-              "lastname": {
                 "type": "string"
               },
               "username": {
@@ -10474,28 +10469,64 @@
               "email": {
                 "type": "string"
               },
+              "provider": {
+                "type": "string"
+              },
               "password": {
                 "type": "string"
               },
               "resetPasswordToken": {
                 "type": "string"
               },
-              "registrationToken": {
+              "confirmationToken": {
                 "type": "string"
               },
-              "isActive": {
+              "confirmed": {
                 "type": "boolean"
-              },
-              "roles": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "blocked": {
                 "type": "boolean"
               },
-              "preferedLanguage": {
+              "role": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string"
+              },
+              "area_of_education": {
+                "type": "string"
+              },
+              "occupation": {
+                "type": "string"
+              },
+              "linkedin_profile": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "coins": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }

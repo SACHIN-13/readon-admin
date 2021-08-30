@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
-      "plugin": "admin",
+      "plugin": "users-permissions",
       "model": "user"
     },
     "preferred_categories": {
