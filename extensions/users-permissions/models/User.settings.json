@@ -65,17 +65,6 @@
     "phone": {
       "type": "biginteger"
     },
-    "gender": {
-      "type": "enumeration",
-      "enum": [
-        "Male",
-        "Female",
-        "Non_binary",
-        "Transgender",
-        "Prefer_not_to_say",
-        "Other"
-      ]
-    },
     "name": {
       "type": "string"
     },
@@ -99,6 +88,9 @@
     },
     "coins": {
       "type": "integer"
+    },
+    "gender": {
+      "type": "string"
     }
   }
 }

@@ -1257,17 +1257,6 @@
           "phone": {
             "type": "integer"
           },
-          "gender": {
-            "type": "string",
-            "enum": [
-              "Male",
-              "Female",
-              "Non_binary",
-              "Transgender",
-              "Prefer_not_to_say",
-              "Other"
-            ]
-          },
           "name": {
             "type": "string"
           },
@@ -1292,6 +1281,9 @@
           },
           "coins": {
             "type": "integer"
+          },
+          "gender": {
+            "type": "string"
           }
         }
       },
@@ -1340,17 +1332,6 @@
           "phone": {
             "type": "integer"
           },
-          "gender": {
-            "type": "string",
-            "enum": [
-              "Male",
-              "Female",
-              "Non_binary",
-              "Transgender",
-              "Prefer_not_to_say",
-              "Other"
-            ]
-          },
           "name": {
             "type": "string"
           },
@@ -1375,6 +1356,9 @@
           },
           "coins": {
             "type": "integer"
+          },
+          "gender": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/30/2021 3:37:48 PM"
+    "x-generation-date": "08/30/2021 3:49:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9179,17 +9179,6 @@
               "phone": {
                 "type": "integer"
               },
-              "gender": {
-                "type": "string",
-                "enum": [
-                  "Male",
-                  "Female",
-                  "Non_binary",
-                  "Transgender",
-                  "Prefer_not_to_say",
-                  "Other"
-                ]
-              },
               "name": {
                 "type": "string"
               },
@@ -9213,6 +9202,9 @@
               },
               "coins": {
                 "type": "integer"
+              },
+              "gender": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -10229,17 +10221,6 @@
               "phone": {
                 "type": "integer"
               },
-              "gender": {
-                "type": "string",
-                "enum": [
-                  "Male",
-                  "Female",
-                  "Non_binary",
-                  "Transgender",
-                  "Prefer_not_to_say",
-                  "Other"
-                ]
-              },
               "name": {
                 "type": "string"
               },
@@ -10263,6 +10244,9 @@
               },
               "coins": {
                 "type": "integer"
+              },
+              "gender": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -10360,17 +10344,6 @@
               "phone": {
                 "type": "integer"
               },
-              "gender": {
-                "type": "string",
-                "enum": [
-                  "Male",
-                  "Female",
-                  "Non_binary",
-                  "Transgender",
-                  "Prefer_not_to_say",
-                  "Other"
-                ]
-              },
               "name": {
                 "type": "string"
               },
@@ -10394,6 +10367,9 @@
               },
               "coins": {
                 "type": "integer"
+              },
+              "gender": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -10709,17 +10685,6 @@
                 "phone": {
                   "type": "integer"
                 },
-                "gender": {
-                  "type": "string",
-                  "enum": [
-                    "Male",
-                    "Female",
-                    "Non_binary",
-                    "Transgender",
-                    "Prefer_not_to_say",
-                    "Other"
-                  ]
-                },
                 "name": {
                   "type": "string"
                 },
@@ -10743,6 +10708,9 @@
                 },
                 "coins": {
                   "type": "integer"
+                },
+                "gender": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -10863,17 +10831,6 @@
           "phone": {
             "type": "integer"
           },
-          "gender": {
-            "type": "string",
-            "enum": [
-              "Male",
-              "Female",
-              "Non_binary",
-              "Transgender",
-              "Prefer_not_to_say",
-              "Other"
-            ]
-          },
           "name": {
             "type": "string"
           },
@@ -10898,6 +10855,9 @@
           },
           "coins": {
             "type": "integer"
+          },
+          "gender": {
+            "type": "string"
           }
         }
       },
@@ -10946,17 +10906,6 @@
           "phone": {
             "type": "integer"
           },
-          "gender": {
-            "type": "string",
-            "enum": [
-              "Male",
-              "Female",
-              "Non_binary",
-              "Transgender",
-              "Prefer_not_to_say",
-              "Other"
-            ]
-          },
           "name": {
             "type": "string"
           },
@@ -10981,6 +10930,9 @@
           },
           "coins": {
             "type": "integer"
+          },
+          "gender": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
