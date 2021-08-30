@@ -19,8 +19,14 @@
     "preferred_categories": {
       "collection": "category"
     },
-    "bookmarks": {
-      "type": "json"
+    "fav_blogs": {
+      "collection": "blog"
+    },
+    "fav_sliders": {
+      "collection": "blog-sliders"
+    },
+    "fav_artciles": {
+      "collection": "handpicked-article"
     }
   }
 }

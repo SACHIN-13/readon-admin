@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/30/2021 3:49:21 PM"
+    "x-generation-date": "08/30/2021 5:53:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10545,8 +10545,200 @@
               }
             }
           },
-          "bookmarks": {
-            "type": "object"
+          "fav_blogs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "media": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reading_time": {
+                  "type": "integer"
+                },
+                "thumbnail": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "poll": {
+                  "type": "string"
+                },
+                "blog_slider": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "fav_sliders": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "sliders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "poll": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "blog": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "fav_artciles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "poll": {
+                  "type": "string"
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "source": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "so": {
+                  "type": "string"
+                },
+                "bg_image": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -10565,8 +10757,23 @@
               "type": "string"
             }
           },
-          "bookmarks": {
-            "type": "object"
+          "fav_blogs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fav_sliders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fav_artciles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
