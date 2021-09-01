@@ -795,7 +795,7 @@
               }
             }
           },
-          "fav_artciles": {
+          "fav_articles": {
             "type": "array",
             "items": {
               "required": [
@@ -885,7 +885,7 @@
               "type": "string"
             }
           },
-          "fav_artciles": {
+          "fav_articles": {
             "type": "array",
             "items": {
               "type": "string"
