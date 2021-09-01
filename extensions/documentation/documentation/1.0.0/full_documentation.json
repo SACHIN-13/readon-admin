@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/30/2021 9:23:32 PM"
+    "x-generation-date": "09/01/2021 9:38:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9206,6 +9206,9 @@
               "gender": {
                 "type": "string"
               },
+              "user_activity": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -10248,6 +10251,9 @@
               "gender": {
                 "type": "string"
               },
+              "user_activity": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -10369,6 +10375,9 @@
                 "type": "integer"
               },
               "gender": {
+                "type": "string"
+              },
+              "user_activity": {
                 "type": "string"
               },
               "created_by": {
@@ -10521,6 +10530,9 @@
                 "type": "integer"
               },
               "gender": {
+                "type": "string"
+              },
+              "user_activity": {
                 "type": "string"
               },
               "created_by": {
@@ -10950,6 +10962,9 @@
                 "gender": {
                   "type": "string"
                 },
+                "user_activity": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -11096,6 +11111,52 @@
           },
           "gender": {
             "type": "string"
+          },
+          "user_activity": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "preferred_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_blogs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_sliders": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_artciles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -11170,6 +11231,9 @@
             "type": "integer"
           },
           "gender": {
+            "type": "string"
+          },
+          "user_activity": {
             "type": "string"
           },
           "created_by": {

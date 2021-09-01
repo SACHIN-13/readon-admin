@@ -91,6 +91,10 @@
     },
     "gender": {
       "type": "string"
+    },
+    "user_activity": {
+      "via": "user",
+      "model": "user-activity"
     }
   }
 }

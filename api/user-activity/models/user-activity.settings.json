@@ -14,7 +14,8 @@
   "attributes": {
     "user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "user_activity"
     },
     "preferred_categories": {
       "collection": "category"

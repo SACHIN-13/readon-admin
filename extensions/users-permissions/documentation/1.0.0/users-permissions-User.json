@@ -1284,6 +1284,52 @@
           },
           "gender": {
             "type": "string"
+          },
+          "user_activity": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "preferred_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_blogs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_sliders": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fav_artciles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1358,6 +1404,9 @@
             "type": "integer"
           },
           "gender": {
+            "type": "string"
+          },
+          "user_activity": {
             "type": "string"
           },
           "created_by": {
