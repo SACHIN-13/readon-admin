@@ -18,8 +18,8 @@ module.exports = ({ env }) => ({
         amazon: `https://email.${env('AWS_REGION', process.env.XAWS_REGION)}.amazonaws.com`
       },
       settings: {
-        defaultFrom: env('EMAIL_DEFAULT_FROM', 'sachin13agarwal@gmail.com'),
-        defaultReplyTo: env('EMAIL_DEFAULT_REPLY_TO', 'sachin13agarwal@gmail.com')
+        defaultFrom: env('EMAIL_DEFAULT_FROM', 'team@readon.in'),
+        defaultReplyTo: env('EMAIL_DEFAULT_REPLY_TO', 'team@readon.in')
       }
     },
   });
